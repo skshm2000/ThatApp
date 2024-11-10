@@ -1,24 +1,38 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import "react-native-gesture-handler";
+import MyStack from "./Navigator";
+import { NavigationContainer } from "@react-navigation/native";
+import CustomNavigator from "./CustomNavigator";
+import "./global.css";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>This is text component</Text>
-      <Text style={styles.text}>NExt is to learn react native navigation</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <View style={styles.container}>
+        <StatusBar style="auto" />
+        <View style={styles.innerContainer}>
+          <Text style={styles.headingText}>ThatApp</Text>
+        </View>
+        <CustomNavigator />
+        <MyStack />
+      </View>
+    </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: "#a83a03",
     flex: 1,
-    backgroundColor: "black",
-    alignItems: "center",
-    justifyContent: "center",
+    paddingTop: 22,
   },
-  text: {
+  headingText: {
     color: "white",
-  }
+    fontSize: 24,
+    fontWeight: "bold",
+  },
+  innerContainer: {
+    padding: 10,
+  },
 });

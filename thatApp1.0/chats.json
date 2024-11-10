@@ -1,0 +1,30 @@
+{
+    "recentChats": [
+        {
+            "chat_id": 1,
+            "phone_number": "+911234567890",
+            "last_message": "Hello, how are you?",
+            "last_message_time": "12:00 PM",
+            "profile_pic": "https://via.placeholder.com/150",
+            "sender": "+911234567890",
+            "unread_count": 1
+        },
+        {
+            "chat_id": 2,
+            "phone_number": "+912234567890",
+            "last_message": "See you for lunch.",
+            "last_message_time": "11:00 AM",
+            "profile_pic": "https://via.placeholder.com/120",
+            "sender": "+911234567890"
+        },
+        {
+            "chat_id": 3,
+            "phone_number": "+912234227890",
+            "last_message": "I'll see you later.",
+            "last_message_time": "9:00 AM",
+            "profile_pic": "https://via.placeholder.com/130",
+            "sender": "self",
+            "sent_status": "sent"
+        }
+    ]
+}
